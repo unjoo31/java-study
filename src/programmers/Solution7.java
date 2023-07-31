@@ -1,8 +1,19 @@
 package programmers;
 
+import java.util.Arrays;
+
 public class Solution7 {
     public String[] solution(String[] strArr) {
-        String[] answer = {};
+        String[] answer = new String[strArr.length];
+        
+        for (int i = 0; i < strArr.length; i++) {
+            if(i % 2 == 1){
+                answer[i] = strArr[i].toUpperCase();
+            }else{
+                answer[i] = strArr[i].toLowerCase();
+            }
+            
+        }
         return answer;
     }
 }
